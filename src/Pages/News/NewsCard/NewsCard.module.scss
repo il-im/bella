@@ -1,0 +1,266 @@
+// .NewsCard {
+//     display: flex;
+//     justify-content: space-between;
+//     flex-wrap: wrap;
+
+//     .card {
+//         display: flex;
+//         justify-content: center;
+//         max-width: 450px;
+//         margin: 1rem;
+//         .info {
+//             display: flex;
+//             flex-direction: column;
+//             margin: 1rem 0 0 1rem;
+//             max-height: 250px;
+
+
+//             &__date{
+//                 color: rgba(124, 124, 124, 1);
+//                 font-size: 14px;
+//                 font-weight: 600;
+//             }
+//             h2 {
+//                 font-size: 16px;
+//             }
+//             p {
+//                 font-size: 14px;
+//             }
+
+//             &__btn {
+//                 width: 234px;
+//                 height: 44px;
+//                 i {
+//                     color: #ab844a;
+//                 }
+//             }
+//             &__btn:hover {
+//                 background-color: #2b2a2a;
+//                 color: white;
+//             }
+//         }
+//         img {
+//             width: 250px;
+//             height: 250px;
+
+//             @media screen and (max-width: 700px) {
+//                 width: 180px;
+//                 height: 200px;
+//             }
+//         }
+//     }
+
+//     @media screen and (max-width: 700px) {
+//         display: flex;
+//         margin: 0 auto;
+//         justify-content: center;
+//     }
+// }
+//----------КРОШКИ----------
+.breadCrumbs {
+    width: 80%;
+
+    &__link {
+        width: 100%;
+        height: 60px;
+        padding-left: 92px;
+        // padding-top: 30px;
+    }
+    &__list {
+        list-style: none;
+        display: flex;
+    }
+
+    .breadCrumbs__newsTitle {
+        padding-left: 122px;
+        padding-top: 20px;
+    }
+}
+//-------END OF КРОШКИ------
+.NewsCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .w_100 {
+        // display: flex;
+        // justify-content: center;
+    
+        .mainCart {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .newscart {
+            width: 505px;
+            height: 240px;
+            border: 1px solid #e4e4e4;
+            display: flex;
+            margin: 15px;
+        
+            &__blockLeft img{
+                height: 100%;
+                max-width: 238px;
+            }
+        
+            &__blockRight {
+                margin: 15px 22px 22px 22px;
+                height: 200px;
+            }
+            &__data {
+                font-weight: 550;
+                font-size: 13px;
+                color: #7c7c7c;
+                margin-bottom: 5px;
+            }
+            &__title {
+                font-weight: 600;
+                font-size: 15px;
+                color: #000000;
+            }
+            &__text {
+                font-weight: 400;
+                font-size: 14px;
+                color: #7c7c7c;
+                letter-spacing: 0.04em;
+                line-height: 150%;
+            }
+            .newscart__blockForbtn{
+                height: 50px;
+                display: flex;
+                align-items: flex-end;
+                .newscart__btn {
+                    width: 234px;
+                    height: 44px;
+                    background: #ffff;
+                    border: none;
+                    color: rgb(0, 0, 0);
+                    font-size: 14px;
+                    font-weight: 400;
+                    // margin-top: 25px;
+                }
+                .newscart__btn img {
+                    width: 14px;
+                    height: 14px;
+                    margin: 0 7px;
+                }
+                //--------HOVER-------------
+                .newscart__btn:hover {
+                    background: #2a2a2a;
+                    color: white;
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+        
+            //--------ДУБЛЬ КАРТ--------
+            .newscart {
+                margin: 20px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 620px) {
+    .newscart{
+        width: 450px;
+        height: 185px;
+
+        &__data {
+            margin-top: -12px;
+        }
+        &__title {
+            font-weight: 600;
+            font-size: 14px;
+            color: #000000;
+        }
+        &__text {
+            font-weight: 400;
+            font-size: 13px;
+            color: #7c7c7c;
+            letter-spacing: 0.04em;
+            line-height: 150%;
+        }
+        &__btn {
+            width: 190px;
+            height: 36px;
+            background: #ffff;
+            margin-top: 7px;
+            border: none;
+            color: rgb(0, 0, 0);
+            font-size: 13px;
+            font-weight: 400;
+        }
+    }
+}
+@media screen and (max-width: 450px) {
+    .newscart{
+        width: 350px;
+        height: 158px;
+
+        &__data {
+            margin-top: -12px;
+            font-size: 12px;
+        }
+        &__title {
+            font-weight: 600;
+            font-size: 12px;
+            color: #000000;
+        }
+        &__text {
+            font-weight: 400;
+            font-size: 11px;
+            color: #7c7c7c;
+            letter-spacing: 0.04em;
+            line-height: 150%;
+        }
+        &__btn {
+            width: 155px;
+            height: 33px;
+            background: #ffff;
+            margin-top: 5px;
+            border: none;
+            color: rgb(0, 0, 0);
+            font-size: 11px;
+            font-weight: 400;
+        }
+    }
+}
+@media screen and (max-width: 370px) {
+
+    .newscart{
+        width: 293px;
+        height: 148px;
+
+        &__blockRight {
+            margin: 8px;
+        }
+        &__data {
+            margin-top: -5px;
+            font-size: 11px;
+        }
+        &__title {
+            font-weight: 600;
+            font-size: 11px;
+            color: #000000;
+            margin-bottom: 3px;
+        }
+        &__text {
+            font-weight: 400;
+            font-size: 10px;
+            color: #7c7c7c;
+            letter-spacing: 0.04em;
+            line-height: 150%;
+        }
+        &__btn {
+            width: 132px;
+            height: 28px;
+            background: #ffff;
+            margin-top: 5px;
+            border: none;
+            color: rgb(0, 0, 0);
+            font-size: 10px;
+            font-weight: 400;
+        }
+    }
+}
